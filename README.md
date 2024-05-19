@@ -1,6 +1,4 @@
 # Restaurant-Apps
-The Final Project.
-<h1><a href="https://restaurants-catalogue.netlify.app/">Restaurants Catalogue</a></h1>
 
 [![Github? Restaurant Catalogue!](https://badgen.net/badge/Github/Restaurants%20Apps?color=63BB15&icon=github)](https://github.com/Rauf74/Restaurant-Apps.git/) ![JS](https://img.shields.io/badge/Javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=23F7DF1E&color=34495E) 	![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) ![SCSS](https://img.shields.io/badge/SCSS-1572B6?style=flat&logo=scss&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=1589BB&color=626262)
 
