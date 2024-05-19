@@ -77,7 +77,7 @@ Finally, run the following command to open on localhost :
 npm run start-dev
 ```
 
-After running, open `http://localhost:9015/` in the browser. Enjoy :)
+After running, open `http://localhost:8080/` in the browser. Enjoy :)
 
 <br>
 <h2>How to do integration testing ?</h2>
