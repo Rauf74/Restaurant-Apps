@@ -12,7 +12,9 @@ const restaurantListDbApi = new Route(
 );
 
 const restaurantImageDbApi = new Route(
-    ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev/images/medium/'),
+    ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev/images/medium/')
+                || url.href.startsWith('https://restaurant-api.dicoding.dev/images/small/')
+                || url.href.startsWith('https://restaurant-api.dicoding.dev/images/large/'),
     new StaleWhileRevalidate({
         cacheName: 'Restaurant Image Cache API',
     }),
