@@ -1,4 +1,5 @@
-import { createSkeletonRestaurantDetail } from "../views/templates/template-creator.js";
+import { createSkeletonRestaurantDetail } from '../views/templates/template-creator.js';
+
 class detailContent extends HTMLElement {
     connectedCallback() {
         this.render();
@@ -14,4 +15,4 @@ class detailContent extends HTMLElement {
     }
 }
 
-customElements.define("detail-content", detailContent);
+customElements.define('detail-content', detailContent);

@@ -1,7 +1,7 @@
-import DrawerInitiator from "../utils/drawer-initiator.js";
-import UrlParser from "../routes/url-parser.js";
-import routes from "../routes/routes.js";
-import "../component/skipLink.js";
+import DrawerInitiator from '../utils/drawer-initiator.js';
+import UrlParser from '../routes/url-parser.js';
+import routes from '../routes/routes.js';
+import '../component/skipLink.js';
 
 class App {
     constructor({
@@ -31,10 +31,10 @@ class App {
         this._content.innerHTML = await page.render();
         await page.afterRender();
 
-        const skipLink = document.querySelector("skip-link");
-        skipLink.addEventListener("click", (event) => {
+        const skipLink = document.querySelector('skip-link');
+        skipLink.addEventListener('click', (event) => {
             event.preventDefault();
-            document.querySelector("#content").focus();
+            document.querySelector('#content').focus();
         });
     }
 }

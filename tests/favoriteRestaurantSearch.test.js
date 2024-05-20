@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import FavoriteRestaurantSearchPresenter from '../src/scripts/views/pages/liked-restaurants/favorite-restaurant-search-presenter.js';
 // import FavoriteRestaurantIdb from '../src/scripts/data/fav-restaurant-indexedDB.js';
 import FavoriteRestaurantSearchView from '../src/scripts/views/pages/liked-restaurants/favorite-restaurant-search-view.js';
@@ -51,9 +52,7 @@ describe('Searching restaurants', () => {
         });
 
         it('should show the restaurants found by Favorite restaurants', (done) => {
-
             document.getElementById('grid').addEventListener('grid:updated', () => {
-
                 expect(document.querySelectorAll('.list-item').length).toEqual(3);
 
                 done();

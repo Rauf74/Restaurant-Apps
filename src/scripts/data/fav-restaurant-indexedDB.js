@@ -41,7 +41,7 @@ const FavoriteRestaurantIdb = {
 
             const loweredCaseQuery = query.toLowerCase();
             const jammedQuery = loweredCaseQuery.replace(/\s/g, '');
-            
+
             return jammedRestaurantName.indexOf(jammedQuery) !== -1;
         });
     },

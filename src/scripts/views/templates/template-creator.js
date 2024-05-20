@@ -1,4 +1,4 @@
-import CONFIG from "../../globals/config.js";
+import CONFIG from '../../globals/config.js';
 
 const small = 'small/';
 const medium = 'medium/';
@@ -70,11 +70,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
                 <h1 class="list-item-title">${restaurant.name}</h1>
                 <p class="restaurant-rating">Rating : <i class="fa-solid fa-star"></i><span> ${restaurant.rating}</span></p>
                 <p class="address"><i class="fa-solid fa-map-marker-alt"></i> <span>${restaurant.address}, ${restaurant.city}</span></p>
-                <p class="categories">Kategori : <span>${restaurant.categories.map((kategori) => kategori.name).join(", ")}</span></p>
+                <p class="categories">Kategori : <span>${restaurant.categories.map((kategori) => kategori.name).join(', ')}</span></p>
                 <p>Makanan : </p>
-                <span>${restaurant.menus.foods.map((food) => food.name).join(", ")}</span>
+                <span>${restaurant.menus.foods.map((food) => food.name).join(', ')}</span>
                 <p>Minuman : </p>
-                <span>${restaurant.menus.drinks.map((drink) => drink.name).join(", ")}</span>
+                <span>${restaurant.menus.drinks.map((drink) => drink.name).join(', ')}</span>
             </div>
         <div class="restaurant-description" tabindex="0">
             <div class="menu">Deskripsi :</div>
@@ -97,7 +97,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
                     <p>${review.review}</p>
                 </div>
             </div>
-            `).join("")}
+            `).join('')}
         </div>
     </div>
     <form class="add-review-user">

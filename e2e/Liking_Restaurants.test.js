@@ -20,7 +20,7 @@ Scenario('liking one restaurant', async ({ I }) => {
     I.seeElement('.list-item-content a');
 
     const firstRestaurantName = await I.grabTextFrom(locate('.list-item-title').first());
-    
+
     I.click(locate('.list-item-content a').first());
     I.wait(3);
 

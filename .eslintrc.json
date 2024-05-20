@@ -21,7 +21,6 @@
         "no-restricted-globals": 0,
         "linebreak-style": 0,
         "indent": [1, 4],
-        "quotes": ["error", "double"],
         "import/extensions": ["error", "ignorePackages", {"js" : "always"}],
         "no-promise-executor-return": "off",
         "arrow-parens": "off",

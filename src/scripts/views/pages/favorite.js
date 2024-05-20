@@ -1,4 +1,4 @@
-import FavoriteRestaurantIdb from "../../data/fav-restaurant-indexedDB.js";
+import FavoriteRestaurantIdb from '../../data/fav-restaurant-indexedDB.js';
 import FavoriteRestaurantSearchView from './liked-restaurants/favorite-restaurant-search-view.js';
 import FavoriteRestaurantShowPresenter from './liked-restaurants/favorite-restaurant-show-presenter.js';
 import FavoriteRestaurantSearchPresenter from './liked-restaurants/favorite-restaurant-search-presenter.js';
@@ -7,37 +7,37 @@ const view = new FavoriteRestaurantSearchView();
 
 const Favorite = {
     async render() {
-      const template = await view.getTemplate();
+        const template = await view.getTemplate();
 
-      const combinedTemplate = `
+        const combinedTemplate = `
           <div class="loader" id="loader"></div>
           ${template}
       `;
-      return combinedTemplate;
+        return combinedTemplate;
     },
 
     async afterRender() {
-        const loader = document.getElementById("loader");
-        const header = document.querySelector("header-component");
-        const hero = document.querySelector("hero-component");
+        const loader = document.getElementById('loader');
+        const header = document.querySelector('header-component');
+        const hero = document.querySelector('hero-component');
         // const cardTitle = document.querySelector(".card-title");
-        const searchCard = document.querySelector(".fav-card");
-        const footer = document.querySelector("footer-component");
-        header.style.display = "none";
-        hero.style.display = "none";
-        searchCard.style.display = "none";
+        const searchCard = document.querySelector('.fav-card');
+        const footer = document.querySelector('footer-component');
+        header.style.display = 'none';
+        hero.style.display = 'none';
+        searchCard.style.display = 'none';
         // cardTitle.style.display = "none";
-        footer.style.display = "none";
-        loader.style.display = "block";
+        footer.style.display = 'none';
+        loader.style.display = 'block';
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
         // const restaurants = await FavoriteRestaurantIdb.getAllRestaurant();
-        const restoList = document.getElementById("grid");
-        const skipLink = document.querySelector("skip-link>a");
+        const restoList = document.getElementById('grid');
+        const skipLink = document.querySelector('skip-link>a');
 
-        restoList.style.marginTop = "60px";
-        skipLink.setAttribute("href", "#content");
+        restoList.style.marginTop = '60px';
+        skipLink.setAttribute('href', '#content');
 
         // if (restaurants.length === 0) {
         //     restoList.innerHTML = `
@@ -55,10 +55,10 @@ const Favorite = {
         new FavoriteRestaurantSearchPresenter({ view, favoriteRestaurants: FavoriteRestaurantIdb });
         // }
 
-        loader.style.display = "none";
-        header.style.display = "block";
-        searchCard.style.display = "flex";
-        footer.style.display = "block";
+        loader.style.display = 'none';
+        header.style.display = 'block';
+        searchCard.style.display = 'flex';
+        footer.style.display = 'block';
     },
 };
 

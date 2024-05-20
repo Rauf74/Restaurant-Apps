@@ -11,4 +11,4 @@ class skipLink extends HTMLElement {
     }
 }
 
-customElements.define("skip-link", skipLink);
+customElements.define('skip-link', skipLink);

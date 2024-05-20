@@ -1,4 +1,5 @@
-import { createSkeletonRestaurantTemplate } from "../views/templates/template-creator.js";
+import { createSkeletonRestaurantTemplate } from '../views/templates/template-creator.js';
+
 class mainContent extends HTMLElement {
     connectedCallback() {
         this.render();
@@ -18,4 +19,4 @@ class mainContent extends HTMLElement {
     }
 }
 
-customElements.define("main-content", mainContent);
+customElements.define('main-content', mainContent);

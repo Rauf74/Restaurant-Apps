@@ -1,8 +1,8 @@
 const errorPage = (error) => {
-    const body = document.querySelector("body");
-    const pageError = document.createElement("div");
-    pageError.setAttribute("class", "error-page");
-    body.innerHTML = "";
+    const body = document.querySelector('body');
+    const pageError = document.createElement('div');
+    pageError.setAttribute('class', 'error-page');
+    body.innerHTML = '';
     pageError.innerHTML = `
         <div class="error-page-content">
             <div class="error-page-content-text">
