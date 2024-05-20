@@ -23,4 +23,4 @@ class header extends HTMLElement {
     }
 }
 
-customElements.define("header-component", header);
+customElements.define('header-component', header);
