@@ -7,7 +7,7 @@ class FavoriteRestaurantSearchView {
             <div class="fav-card">
                 <div class="fav-title">Favorite Restaurants</div>
                 <div class="search-container"> 
-                    <input id="query" type="text" placeholder="Type restaurants name...">
+                    <input autocomplete="on" id="query" type="text" placeholder="Type restaurants name...">
                     <div id="searchIcon">
                         <i class="fas fa-search"></i>
                     </div>
